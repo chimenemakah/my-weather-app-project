@@ -10,10 +10,91 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="my weather app/weather app.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="weather app.css" />
     <title>My Weather App</title>
   </head>
   <body>
-    <script src="my weather app/weather app.js"></script>
+    <div class="container">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-7">
+                <input
+                  type="search"
+                  placeholder="Type a city"
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-2">
+                <input type="submit" value="search" class="btn btn-primary" />
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    id="current-location-button"
+                  >
+                    Current
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="overview">
+            <h1 id="city">Port Harcourt</h1>
+            <ul>
+              <li>last updated at <span id="date"></span></li>
+              <li id="description">clear</li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="d-flex weather-temperature">
+                <img src=" " alt="cloudy" class="float-left" id="icon" />
+                <div class="float-left">
+                  <strong id="temperature">12</strong
+                  ><span class="units">℃ </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <ul>
+                <li>Humidity:<span id="humidity"></span>%</li>
+                <li>Wind:<span id="wind"></span> km/h</li>
+              </ul>
+            </div>
+          </div>
+          <div class="weather-forecast" id="forecast">
+            <div class="row">
+              <div class="col-2">
+                <div class="weather-forcast-date">Thu</div>
+                <img
+                  src="https://openweathermap.org/img/wn/50d@2x.png"
+                  alt="clear"
+                  width="35"
+                />
+                <div class="weather-forecast-temperature">
+                  <span class="weather-forecast-temperature-max">18°</span>
+                  <span class="weather-forecast-temperature-min">12°</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <small
+          ><a
+            href="https://github.com/chimenemakah/my-weather-app-project"
+            target="_blank"
+            >open-source code</a
+          >
+          by Chimenem Akah</small
+        >
+      </div>
+    </div>
+
+    <script src="weather app.js"></script>
   </body>
 </html>

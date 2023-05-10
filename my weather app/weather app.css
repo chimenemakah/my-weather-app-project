@@ -6,7 +6,7 @@ h1 {
   margin-bottom: 0;
 }
 body {
-  background: whitesmoke;
+  background: rgb(172, 202, 231);
 }
 ul {
   margin: 0;
@@ -23,16 +23,16 @@ li::first-letter {
   text-transform: capitalize;
 }
 .weather-app-wrapper {
-  max-width: 800px;
-  margin: 50px auto;
+  max-width: 700px;
+  margin: 20px auto;
 }
 .weather-app {
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 15px;
+  background-image: url(/images/climate\ effect.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgb(212, 243, 233);
   background-size: cover;
 }
 

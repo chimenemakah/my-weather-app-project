@@ -20,31 +20,29 @@
         <div class="weather-app">
           <form id="search-form" class="mb-3">
             <div class="row">
-              <div class="col-7">
+              <div class="col-8">
                 <input
                   type="search"
-                  placeholder="Type a city"
+                  placeholder="type a city"
                   class="form-control"
                   id="city-input"
                   autocomplete="off"
                 />
               </div>
-              <div class="col-2">
+              <div class="col">
                 <input type="submit" value="search" class="btn btn-primary" />
-                <div>
-                  <button
-                    type="button"
-                    class="btn btn-success"
-                    id="current-location-button"
-                  >
-                    Current
-                  </button>
-                </div>
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  id="current-location-button"
+                >
+                  current
+                </button>
               </div>
             </div>
           </form>
           <div class="overview">
-            <h1 id="city">Port Harcourt</h1>
+            <h1 id="city">Port harcourt</h1>
             <ul>
               <li>last updated at <span id="date"></span></li>
               <li id="description">clear</li>
@@ -74,7 +72,7 @@
                 <img
                   src="https://openweathermap.org/img/wn/50d@2x.png"
                   alt="clear"
-                  width="35"
+                  width="42"
                 />
                 <div class="weather-forecast-temperature">
                   <span class="weather-forecast-temperature-max">18°</span>
